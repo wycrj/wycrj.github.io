@@ -16,8 +16,8 @@ body {
   background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%);
   background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%);
   background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%); */
-  background: url('../img/jiajia.jpg');
-  background-size: cover;
+  background: url('../img/love.jpg') no-repeat;
+  background-size: 100% 100%;
 }
 
 /* 计时器 */
