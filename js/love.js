@@ -35,21 +35,24 @@
   function timeElapse(date) {
     var current = Date()
     var seconds = (Date.parse(current) - Date.parse(date)) / 1000
+    let second = seconds
+    let minute = seconds / 60
+    let hour = seconds / 3600
     var days = Math.floor(seconds / (3600 * 24))
-    if (days == 100 && flag) {
-      $('body').vegas('options', 'slides', [
-        {
-          src: base_url + '100days.jpg'
-        }
-      ])
-      flag = false
-    } else if (days > 100 && !flag) {
+    // if (days == 100 && flag) {
+    //   $('body').vegas('options', 'slides', [
+    //     {
+    //       src: base_url + '100days.jpg'
+    //     }
+    //   ])
+    //   flag = false
+    // } else if (days > 100 && !flag) {
       // options.push({
       //   src: base_url + '100days.jpg'
       // })
-      $('body').vegas('options', 'slides', options)
-      flag = true
-    }
+    //   $('body').vegas('options', 'slides', options)
+    //   flag = true
+    // }
     seconds = seconds % (3600 * 24)
     var hours = Math.floor(seconds / 3600)
     if (hours < 10) {
@@ -73,7 +76,13 @@
       minutes +
       '</span> 分钟 <span class="digit">' +
       seconds +
-      '</span> 秒'
+      '</span> 秒' + 
+      '<div class="didown">也就是' +
+      Math.floor(hour) + ' 小时</div>' + 
+      '<div class="didown">' +
+      Math.floor(minute) + ' 分钟</div>' +
+      '<div class="didown">' +
+      Math.floor(second) + ' 秒</div>'
     $('#elapseClock').html(result)
   }
 

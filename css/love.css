@@ -16,7 +16,7 @@ body {
   background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%);
   background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%);
   background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 90%); */
-  background: url('../img/love.jpg') no-repeat;
+  background: url('../img/jiajia.jpg') no-repeat;
   background-size: 100% 100%;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .timer {
   margin: 30px auto;
-  margin-top: 20%;
+  margin-top: 10%;
   font-family: "sans-serif";
   width: 90%;
   font-size: 16px;
