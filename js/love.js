@@ -11,7 +11,7 @@
 
   // 动态切换背景图片
   var base_url = 'http://oxrhnf1ro.bkt.clouddn.com/'
-  var images = ['img/back.jpg']
+  var images = ['img/together.jpg']
   // for (var i = 1; i <= 15; i++) {
   //   var temp = { src: base_url + i + '.jpg' }
   //   images[i - 1] = temp
@@ -28,7 +28,7 @@
     animation: 'kenburns',
     slides: images
   }
-  $('body').vegas(options)
+  // $('body').vegas(options)
   // 倒计时
   var flag = true
 
